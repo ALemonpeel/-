@@ -1,0 +1,31 @@
+.info.data-v-0614d904 {
+  display: flex;
+  align-items: center;
+  margin-top: 5rpx;
+}
+.info .ele.data-v-0614d904 {
+  flex: 1;
+  text-align: center;
+}
+.info .ele .icon.data-v-0614d904 {
+  width: 40rpx;
+  height: 40rpx;
+}
+.info .ele .tx.data-v-0614d904 {
+  position: relative;
+  top: -10rpx;
+}
+.menu.data-v-0614d904 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu .item.data-v-0614d904 {
+  width: 20%;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+.menu .item .image.data-v-0614d904 {
+  width: 100rpx;
+  height: 100rpx;
+}
+

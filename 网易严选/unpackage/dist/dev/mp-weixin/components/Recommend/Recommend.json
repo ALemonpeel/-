@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "banner": "/components/Banner/Banner",
+    "show": "/components/Show/Show"
+  },
+  "component": true
+}

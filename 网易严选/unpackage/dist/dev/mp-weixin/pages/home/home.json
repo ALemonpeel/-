@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "网易严选",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "recommend": "/components/Recommend/Recommend",
+    "menu-cate": "/components/MenuCate/MenuCate"
+  }
+}
