@@ -1,0 +1,75 @@
+.goodsitem .goodstitle.data-v-3e159eb4 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  background-color: white;
+  font-size: 40rpx;
+}
+.goodsitem .goods.data-v-3e159eb4 {
+  padding: 90rpx 0;
+}
+.goodsitem .goods .img.data-v-3e159eb4 {
+  width: 100%;
+  height: 750rpx;
+}
+.goodsitem .goods .btn.data-v-3e159eb4 {
+  width: 90%;
+  height: 100rpx;
+  background-color: #bb2c08;
+  margin: 20rpx auto;
+  border-radius: 10rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  color: white;
+  text-align: center;
+}
+.goodsitem .goods .price.data-v-3e159eb4 {
+  margin-left: 5%;
+  font-size: 50rpx;
+  color: #bb2c08;
+}
+.goodsitem .goods .descriptionlist.data-v-3e159eb4 {
+  margin-left: 5%;
+  padding: 20rpx 0;
+}
+.goodsitem .goods .descriptionlist .description.data-v-3e159eb4 {
+  font-size: 25rpx;
+  margin: 10rpx 0;
+}
+.goodsitem .goodsfoot.data-v-3e159eb4 {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  text-align: center;
+  background-color: white;
+  display: flex;
+}
+.goodsitem .goodsfoot .icon.data-v-3e159eb4 {
+  flex: 1;
+  height: 100rpx;
+  border-right: 1rpx solid #eae2ec;
+}
+.goodsitem .goodsfoot .icon .kefu.data-v-3e159eb4 {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 20rpx auto;
+}
+.goodsitem .goodsfoot .buy.data-v-3e159eb4 {
+  flex: 2;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 35rpx;
+}
+.goodsitem .goodsfoot .addShoppingCart.data-v-3e159eb4 {
+  flex: 2;
+  background-color: #bb2c08;
+  line-height: 100rpx;
+  text-align: center;
+  color: white;
+  font-size: 35rpx;
+}
+

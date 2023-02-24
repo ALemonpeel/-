@@ -21,7 +21,7 @@ export default {
 		},
 		setcategoryModule(state, payload) {
 			state.categoryModule = payload;
-		}
+		},
 
 	},
 	actions: {

@@ -101,10 +101,10 @@ var components
 try {
   components = {
     Recommend: function () {
-      return __webpack_require__.e(/*! import() | components/Recommend/Recommend */ "components/Recommend/Recommend").then(__webpack_require__.bind(null, /*! @/components/Recommend/Recommend.vue */ 73))
+      return __webpack_require__.e(/*! import() | components/Recommend/Recommend */ "components/Recommend/Recommend").then(__webpack_require__.bind(null, /*! @/components/Recommend/Recommend.vue */ 83))
     },
     MenuCate: function () {
-      return __webpack_require__.e(/*! import() | components/MenuCate/MenuCate */ "components/MenuCate/MenuCate").then(__webpack_require__.bind(null, /*! @/components/MenuCate/MenuCate.vue */ 80))
+      return __webpack_require__.e(/*! import() | components/MenuCate/MenuCate */ "components/MenuCate/MenuCate").then(__webpack_require__.bind(null, /*! @/components/MenuCate/MenuCate.vue */ 90))
     },
   }
 } catch (e) {
@@ -161,7 +161,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function(uni) {
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
 Object.defineProperty(exports, "__esModule", {
@@ -180,7 +180,8 @@ var _default = {
   data: function data() {
     return {
       kingKongList: [],
-      activeIndex: -1
+      activeIndex: -1,
+      cateid: 0
     };
   },
   computed: {
@@ -190,7 +191,11 @@ var _default = {
     this.getIndexData();
     this.getRecomBanner();
   },
-  methods: _objectSpread(_objectSpread(_objectSpread({}, (0, _vuex.mapMutations)('menu', ['setNavlist', 'setpolicyDescList', 'setcategoryModule'])), {}, {
+  //监听页面滚动，并将页面滚动信息发送给其他组件
+  onPageScroll: function onPageScroll(res) {
+    uni.$emit('onPageScroll', res.scrollTop);
+  },
+  methods: _objectSpread(_objectSpread(_objectSpread(_objectSpread({}, (0, _vuex.mapMutations)('menu', ['setNavlist', 'setpolicyDescList', 'setcategoryModule'])), {}, {
     getIndexData: function getIndexData() {
       var _this = this;
       return (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee() {
@@ -220,14 +225,18 @@ var _default = {
           }
         }, _callee);
       }))();
-    },
-    /* 
-      导航条各项点击事件
-    	 index 导航项下标
-    	 data  导航项对应的数据
-     */
-    dinaji: function dinaji(index) {
+    }
+  }, (0, _vuex.mapMutations)('menu', ['setL1Id'])), {}, {
+    dinaji: function dinaji(index, L1Id) {
       this.activeIndex = index;
+      this.cateid = L1Id;
+      if (L1Id > 333) {
+        this.activeIndex = -1;
+        this.getRecomBanner();
+      }
+      if (index === -1) {
+        this.getRecomBanner();
+      }
     }
   }, (0, _vuex.mapMutations)('menu', ['setimagelist'])), {}, {
     //请求首页轮播图数据
@@ -259,6 +268,7 @@ var _default = {
   })
 };
 exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
 

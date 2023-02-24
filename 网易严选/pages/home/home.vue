@@ -18,13 +18,13 @@
 				推荐
 			</view>
 			<view class='item' :class="{active: index == activeIndex}" v-for="(item,index) in kingKongList"
-				:key="item.L1Id" @click="dinaji(index)">{{item.text}}</view>
+				:key="item.L1Id" @click="dinaji(index,item.L1Id)">{{item.text}}</view>
 			<view class="tianchong"></view>
 		</scroll-view>
 		<!-- 推荐界面 -->
 		<Recommend v-if="activeIndex === -1"></Recommend>
 		<!-- 显示其他 -->
-		<MenuCate v-else></MenuCate>
+		<MenuCate v-else :cateid="cateid"></MenuCate>
 
 	</view>
 </template>
@@ -40,7 +40,8 @@
 		data() {
 			return {
 				kingKongList: [],
-				activeIndex: -1
+				activeIndex: -1,
+				cateid: 0,
 			}
 		},
 		computed: {
@@ -49,6 +50,10 @@
 		mounted() {
 			this.getIndexData()
 			this.getRecomBanner()
+		},
+		//监听页面滚动，并将页面滚动信息发送给其他组件
+		onPageScroll(res) {
+			uni.$emit('onPageScroll', res.scrollTop);
 		},
 		methods: {
 			//请求首页的动态数据信息
@@ -69,10 +74,19 @@
 			/* 
 			  导航条各项点击事件
 				 index 导航项下标
-				 data  导航项对应的数据
+				 L1Id  当前导航栏Id
 			 */
-			dinaji(index) {
+			...mapMutations('menu', ['setL1Id']),
+			dinaji(index, L1Id) {
 				this.activeIndex = index
+				this.cateid = L1Id
+				if (L1Id > 333) {
+					this.activeIndex = -1
+					this.getRecomBanner()
+				}
+				if (index === -1) {
+					this.getRecomBanner()
+				}
 			},
 			...mapMutations('menu', ['setimagelist']),
 			//请求首页轮播图数据
@@ -83,7 +97,8 @@
 					//存储轮播图数据
 					this.setimagelist(res.result)
 				}
-			}
+			},
+
 		}
 	}
 </script>

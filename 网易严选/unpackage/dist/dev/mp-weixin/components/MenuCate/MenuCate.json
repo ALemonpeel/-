@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "banner": "/components/Banner/Banner"
+  },
   "component": true
 }

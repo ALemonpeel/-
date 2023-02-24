@@ -105,7 +105,7 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/Recommend/Recommend":1,"components/Banner/Banner":1,"components/Show/Show":1};
+/******/ 		var cssChunks = {"components/MenuCate/MenuCate":1,"components/Recommend/Recommend":1,"components/Banner/Banner":1,"components/Show/Show":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {

@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<swiper class="banner" autoplay interval='3000' circular indicator-dots>
-			<swiper-item v-for="item in imagelist" :key="item.id">
+			<swiper-item v-for="(item,index) in imagelist" :key="index">
 				<image :src="item.pic" mode=""></image>
 			</swiper-item>
 		</swiper>
@@ -17,9 +17,7 @@
 	export default {
 		name: "Banner",
 		data() {
-			return {
-				// imagelist: []
-			};
+			return {};
 		},
 		computed: {
 			...mapState('menu', ['imagelist'])

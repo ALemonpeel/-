@@ -1,0 +1,43 @@
+.show .title.data-v-0762b478 {
+  text-align: center;
+}
+.show .title ._h2.data-v-0762b478 {
+  font-size: 50rpx;
+}
+.show .title ._h4.data-v-0762b478 {
+  font-size: 40rpx;
+}
+.show .goodslist.data-v-0762b478 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20rpx;
+}
+.show .goodslist .goods.data-v-0762b478 {
+  width: 334rpx;
+  padding-bottom: 10rpx;
+}
+.show .goodslist .goods .image.data-v-0762b478 {
+  width: 334rpx;
+  height: 334rpx;
+}
+.show .goodslist .goods .goodstitle.data-v-0762b478 {
+  padding: 10rpx;
+}
+.show .goodslist .goods .goodsprice.data-v-0762b478 {
+  font-size: 35rpx;
+  color: red;
+}
+.show .fanhui.data-v-0762b478 {
+  position: fixed;
+  right: 20rpx;
+  bottom: 20rpx;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 8px;
+  width: 60rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius: 50%;
+}
+
