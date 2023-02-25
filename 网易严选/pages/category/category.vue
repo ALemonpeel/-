@@ -24,7 +24,8 @@
 					scroll-with-animation="true">
 					<image :src="showlist.imgUrl" mode="" class="topimg"></image>
 					<view class="imglist">
-						<view class="img" v-for="item in showlist.subCateList" :key="item.id">
+						<view class="img" v-for="item in showlist.subCateList" :key="item.id"
+							@click="gogoodslist(item.name)">
 							<image :src="item.wapBannerUrl"></image>
 							<view class="text">{{item.name}}</view>
 						</view>
@@ -88,6 +89,12 @@
 			gotop() {
 				this.top = this.top == 0 ? 1 : 0;
 
+			},
+			//跳转至商品详情页
+			gogoodslist(name) {
+				uni.navigateTo({
+					url: '/pages/goodslist/goodslist?url= ' + name
+				})
 			}
 		}
 	}

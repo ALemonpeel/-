@@ -5,7 +5,9 @@
     "pages/about/about",
     "pages/category/category",
     "pages/catePage/catePage",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/goodslist/goodslist",
+    "pages/goodsdetail/goodsdetail"
   ],
   "subPackages": [],
   "window": {

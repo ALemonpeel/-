@@ -180,7 +180,6 @@ var _default = {
     };
   },
   onLoad: function onLoad(options) {
-    console.log(options);
     this.goodinfo = JSON.parse(options.url);
     console.log(this.goodinfo);
   },

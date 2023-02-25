@@ -8,7 +8,7 @@
  */
 import base from './base.js'
 
-export default function(url, method = 'GET', data = {}, loading = true) {
+export default function(url, data = {}, method = 'GET', loading = true) {
 	return new Promise((resolve, rejects) => {
 		//交互动画
 		if (loading) {

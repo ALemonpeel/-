@@ -1,0 +1,112 @@
+.cart .cartlist .goods.data-v-0f00adf4 {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 172rpx;
+  width: 100%;
+  padding: 20rpx 10rpx;
+  border-bottom: 5px solid #efefef;
+}
+.cart .cartlist .goods .gouxuan.data-v-0f00adf4 {
+  flex: 0.5;
+  position: relative;
+}
+.cart .cartlist .goods .gouxuan .xuanze.data-v-0f00adf4 {
+  height: 40rpx;
+  width: 40rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20rpx;
+  margin-left: -20rpx;
+}
+.cart .cartlist .goods .goodsimg.data-v-0f00adf4 {
+  flex: 2;
+}
+.cart .cartlist .goods .goodsimg .image.data-v-0f00adf4 {
+  display: block;
+  width: 172rpx;
+  height: 172rpx;
+}
+.cart .cartlist .goods .content.data-v-0f00adf4 {
+  flex: 4;
+  position: relative;
+}
+.cart .cartlist .goods .content .detail .text.data-v-0f00adf4 {
+  padding: 20rpx 0;
+}
+.cart .cartlist .goods .content .detail .price.data-v-0f00adf4 {
+  font-size: 40rpx;
+  color: #f00;
+}
+.cart .cartlist .goods .content .num.data-v-0f00adf4 {
+  display: flex;
+  width: 200rpx;
+  height: 70rpx;
+  border: 1rpx solid #efefef;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+.cart .cartlist .goods .content .num .add.data-v-0f00adf4 {
+  width: 30%;
+  height: 70rpx;
+  border-right: 1rpx solid #efefef;
+  text-align: center;
+  line-height: 70rpx;
+}
+.cart .cartlist .goods .content .num .quantity.data-v-0f00adf4 {
+  width: 40%;
+  height: 70rpx;
+  text-align: center;
+  line-height: 70rpx;
+  font-weight: 500;
+  font-size: 50rpx;
+}
+.cart .cartlist .goods .content .num .sub.data-v-0f00adf4 {
+  width: 30%;
+  height: 70rpx;
+  border-left: 1rpx solid #efefef;
+  text-align: center;
+  line-height: 70rpx;
+}
+.cart .goodsfoot.data-v-0f00adf4 {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  text-align: center;
+  background-color: white;
+  display: flex;
+}
+.cart .goodsfoot .gouxuan.data-v-0f00adf4 {
+  flex: 2;
+  position: relative;
+  height: 100rpx;
+}
+.cart .goodsfoot .gouxuan .xuanze.data-v-0f00adf4 {
+  height: 40rpx;
+  width: 40rpx;
+  position: absolute;
+  top: 50%;
+  left: 10rpx;
+  margin-top: -20rpx;
+}
+.cart .goodsfoot .gouxuan .jianshu.data-v-0f00adf4 {
+  font-size: 30rpx;
+  line-height: 100rpx;
+}
+.cart .goodsfoot .buy.data-v-0f00adf4 {
+  flex: 2;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 35rpx;
+}
+.cart .goodsfoot .addShoppingCart.data-v-0f00adf4 {
+  flex: 2;
+  background-color: #bb2c08;
+  line-height: 100rpx;
+  text-align: center;
+  color: white;
+  font-size: 35rpx;
+}
+

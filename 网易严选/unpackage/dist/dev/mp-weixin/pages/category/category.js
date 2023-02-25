@@ -135,7 +135,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function(uni) {
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
 Object.defineProperty(exports, "__esModule", {
@@ -146,6 +146,7 @@ var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 44));
 var _base = _interopRequireDefault(__webpack_require__(/*! @/utils/base.js */ 45));
 var _request = _interopRequireDefault(__webpack_require__(/*! @/utils/request.js */ 46));
+//
 //
 //
 //
@@ -256,10 +257,17 @@ var _default = {
     //返回顶部
     gotop: function gotop() {
       this.top = this.top == 0 ? 1 : 0;
+    },
+    //跳转至商品详情页
+    gogoodslist: function gogoodslist(name) {
+      uni.navigateTo({
+        url: '/pages/goodslist/goodslist?url= ' + name
+      });
     }
   }
 };
 exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
 
