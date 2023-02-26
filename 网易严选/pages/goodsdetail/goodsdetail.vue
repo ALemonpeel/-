@@ -23,6 +23,9 @@
 			<view class="icon">
 				<image src="../../static/kefu.png" mode="" class="kefu"></image>
 			</view>
+			<view class="icon" @click="gochart">
+				<image src="../../static/gouwuche.png" mode="" class="kefu"></image>
+			</view>
 			<view class="buy">
 				立即购买
 			</view>
@@ -58,6 +61,12 @@
 			this.id = options.url
 		},
 		methods: {
+			gochart() {
+				console.log('chufa');
+				uni.switchTab({
+					url: '/pages/cart/cart'
+				})
+			},
 			async getgoodsdetail(id) {
 				let res = await request(base.goodsdetail, {
 					id
@@ -76,7 +85,7 @@
 				let res = await request(base.addcart, {
 					name: val.name,
 					pic: val.pic,
-					num: val.num,
+					num: 1,
 					info: val.info,
 					price: val.price
 				})
@@ -86,7 +95,7 @@
 					this.messageText = '加入购物车成功'
 					this.$refs.message.open()
 				}
-			}
+			},
 		},
 		watch: {
 			id: {

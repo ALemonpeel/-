@@ -96,48 +96,6 @@ module.exports = _toPropertyKey, module.exports.__esModule = true, module.export
 
 /***/ }),
 
-/***/ 125:
-/*!**********************************************************************************************!*\
-  !*** C:/Users/Lemonpeel/Desktop/wy/网易严选/uni_modules/uni-popup/components/uni-popup/popup.js ***!
-  \**********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  data: function data() {
-    return {};
-  },
-  created: function created() {
-    this.popup = this.getParent();
-  },
-  methods: {
-    /**
-     * 获取父元素实例
-     */
-    getParent: function getParent() {
-      var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'uniPopup';
-      var parent = this.$parent;
-      var parentName = parent.$options.name;
-      while (parentName !== name) {
-        parent = parent.$parent;
-        if (!parent) return false;
-        parentName = parent.$options.name;
-      }
-      return parent;
-    }
-  }
-};
-exports.default = _default;
-
-/***/ }),
-
 /***/ 13:
 /*!*******************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/typeof.js ***!
@@ -180,7 +138,117 @@ module.exports = _toPrimitive, module.exports.__esModule = true, module.exports[
 
 /***/ }),
 
-/***/ 147:
+/***/ 145:
+/*!**********************************************************************************************!*\
+  !*** C:/Users/Lemonpeel/Desktop/wy/网易严选/uni_modules/uni-popup/components/uni-popup/popup.js ***!
+  \**********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  data: function data() {
+    return {};
+  },
+  created: function created() {
+    this.popup = this.getParent();
+  },
+  methods: {
+    /**
+     * 获取父元素实例
+     */
+    getParent: function getParent() {
+      var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'uniPopup';
+      var parent = this.$parent;
+      var parentName = parent.$options.name;
+      while (parentName !== name) {
+        parent = parent.$parent;
+        if (!parent) return false;
+        parentName = parent.$options.name;
+      }
+      return parent;
+    }
+  }
+};
+exports.default = _default;
+
+/***/ }),
+
+/***/ 15:
+/*!**********************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/construct.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var setPrototypeOf = __webpack_require__(/*! ./setPrototypeOf.js */ 16);
+var isNativeReflectConstruct = __webpack_require__(/*! ./isNativeReflectConstruct.js */ 17);
+function _construct(Parent, args, Class) {
+  if (isNativeReflectConstruct()) {
+    module.exports = _construct = Reflect.construct.bind(), module.exports.__esModule = true, module.exports["default"] = module.exports;
+  } else {
+    module.exports = _construct = function _construct(Parent, args, Class) {
+      var a = [null];
+      a.push.apply(a, args);
+      var Constructor = Function.bind.apply(Parent, a);
+      var instance = new Constructor();
+      if (Class) setPrototypeOf(instance, Class.prototype);
+      return instance;
+    }, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  }
+  return _construct.apply(null, arguments);
+}
+module.exports = _construct, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 16:
+/*!***************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/setPrototypeOf.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _setPrototypeOf(o, p) {
+  module.exports = _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  return _setPrototypeOf(o, p);
+}
+module.exports = _setPrototypeOf, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 17:
+/*!*************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/isNativeReflectConstruct.js ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _isNativeReflectConstruct() {
+  if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+  if (Reflect.construct.sham) return false;
+  if (typeof Proxy === "function") return true;
+  try {
+    Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {}));
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+module.exports = _isNativeReflectConstruct, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 178:
 /*!******************************************************************************************************************!*\
   !*** C:/Users/Lemonpeel/Desktop/wy/网易严选/uni_modules/uni-transition/components/uni-transition/createAnimation.js ***!
   \******************************************************************************************************************/
@@ -311,192 +379,6 @@ function createAnimation(option, _this) {
   return new MPAnimation(option, _this);
 }
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-
-/***/ 15:
-/*!**********************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/construct.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var setPrototypeOf = __webpack_require__(/*! ./setPrototypeOf.js */ 16);
-var isNativeReflectConstruct = __webpack_require__(/*! ./isNativeReflectConstruct.js */ 17);
-function _construct(Parent, args, Class) {
-  if (isNativeReflectConstruct()) {
-    module.exports = _construct = Reflect.construct.bind(), module.exports.__esModule = true, module.exports["default"] = module.exports;
-  } else {
-    module.exports = _construct = function _construct(Parent, args, Class) {
-      var a = [null];
-      a.push.apply(a, args);
-      var Constructor = Function.bind.apply(Parent, a);
-      var instance = new Constructor();
-      if (Class) setPrototypeOf(instance, Class.prototype);
-      return instance;
-    }, module.exports.__esModule = true, module.exports["default"] = module.exports;
-  }
-  return _construct.apply(null, arguments);
-}
-module.exports = _construct, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 16:
-/*!***************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/setPrototypeOf.js ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _setPrototypeOf(o, p) {
-  module.exports = _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
-  return _setPrototypeOf(o, p);
-}
-module.exports = _setPrototypeOf, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 17:
-/*!*************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/isNativeReflectConstruct.js ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _isNativeReflectConstruct() {
-  if (typeof Reflect === "undefined" || !Reflect.construct) return false;
-  if (Reflect.construct.sham) return false;
-  if (typeof Proxy === "function") return true;
-  try {
-    Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {}));
-    return true;
-  } catch (e) {
-    return false;
-  }
-}
-module.exports = _isNativeReflectConstruct, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 170:
-/*!*****************************************************************************************************************!*\
-  !*** C:/Users/Lemonpeel/Desktop/wy/网易严选/uni_modules/uni-swipe-action/components/uni-swipe-action-item/mpwxs.js ***!
-  \*****************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var mpMixins = {};
-var is_pc = null;
-mpMixins = {
-  data: function data() {
-    return {
-      is_show: 'none'
-    };
-  },
-  watch: {
-    show: function show(newVal) {
-      this.is_show = this.show;
-    }
-  },
-  created: function created() {
-    this.swipeaction = this.getSwipeAction();
-    if (this.swipeaction.children !== undefined) {
-      this.swipeaction.children.push(this);
-    }
-  },
-  mounted: function mounted() {
-    this.is_show = this.show;
-  },
-  methods: {
-    // wxs 中调用
-    closeSwipe: function closeSwipe(e) {
-      if (!this.autoClose) return;
-      this.swipeaction.closeOther(this);
-    },
-    change: function change(e) {
-      this.$emit('change', e.open);
-      if (this.is_show !== e.open) {
-        this.is_show = e.open;
-      }
-    },
-    appTouchStart: function appTouchStart(e) {
-      if (is_pc) return;
-      var clientX = e.changedTouches[0].clientX;
-      this.clientX = clientX;
-      this.timestamp = new Date().getTime();
-    },
-    appTouchEnd: function appTouchEnd(e, index, item, position) {
-      if (is_pc) return;
-      var clientX = e.changedTouches[0].clientX;
-      // fixed by xxxx 模拟点击事件，解决 ios 13 点击区域错位的问题
-      var diff = Math.abs(this.clientX - clientX);
-      var time = new Date().getTime() - this.timestamp;
-      if (diff < 40 && time < 300) {
-        this.$emit('click', {
-          content: item,
-          index: index,
-          position: position
-        });
-      }
-    },
-    onClickForPC: function onClickForPC(index, item, position) {
-      if (!is_pc) return;
-    }
-  }
-};
-var _default = mpMixins;
-exports.default = _default;
-
-/***/ }),
-
-/***/ 171:
-/*!********************************************************************************************************************!*\
-  !*** C:/Users/Lemonpeel/Desktop/wy/网易严选/uni_modules/uni-swipe-action/components/uni-swipe-action-item/bindingx.js ***!
-  \********************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var bindIngXMixins = {};
-var _default = bindIngXMixins;
-exports.default = _default;
-
-/***/ }),
-
-/***/ 172:
-/*!*******************************************************************************************************************!*\
-  !*** C:/Users/Lemonpeel/Desktop/wy/网易严选/uni_modules/uni-swipe-action/components/uni-swipe-action-item/mpother.js ***!
-  \*******************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var otherMixins = {};
-var _default = otherMixins;
-exports.default = _default;
 
 /***/ }),
 
@@ -9770,6 +9652,7 @@ exports.default = void 0;
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 25));
 var _vuex = _interopRequireDefault(__webpack_require__(/*! vuex */ 34));
 var _menu = _interopRequireDefault(__webpack_require__(/*! ./modules/menu.js */ 35));
+var _cart = _interopRequireDefault(__webpack_require__(/*! ./modules/cart.js */ 36));
 //导入模块
 
 _vue.default.use(_vuex.default);
@@ -9779,7 +9662,8 @@ var store = new _vuex.default.Store({
   mutations: {},
   actions: {},
   modules: {
-    menu: _menu.default
+    menu: _menu.default,
+    cart: _cart.default
   }
 });
 var _default = store;
@@ -11093,6 +10977,105 @@ exports.default = _default;
 
 /***/ }),
 
+/***/ 36:
+/*!****************************************************************!*\
+  !*** C:/Users/Lemonpeel/Desktop/wy/网易严选/store/modules/cart.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 43));
+var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 45));
+var _base = _interopRequireDefault(__webpack_require__(/*! @/utils/base.js */ 46));
+var _request = _interopRequireDefault(__webpack_require__(/*! @/utils/request.js */ 47));
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 25));
+var _default = {
+  namespaced: true,
+  //开启命名空间
+  state: {
+    list: [] //购物车数据列表
+  },
+
+  getters: {},
+  mutations: {
+    //购物车列表数据
+    setList: function setList(state, payload) {
+      state.list = payload;
+    },
+    //添加购物车
+    addCart: function addCart(state, payload) {
+      state.list.push(payload);
+    },
+    //删除购物车
+    deleteCart: function deleteCart(state, payload) {
+      //payload={index:'',num:''}
+      state.list.splice(payload.index, payload.num);
+    },
+    //修改
+    changeCart: function changeCart(state, payload) {
+      //payload={index,n}
+      //this.list[index].num +=1 ;
+      state.list[payload.index].num += payload.n;
+    },
+    //修改属性selected 
+    changeSelectedStatus: function changeSelectedStatus(state, index) {
+      //payload={index,}
+      console.log('index---', index);
+      //this.list[index].selected = !this.list[index].selected;
+      // state.list[index].selected = !state.list[index].selected;
+      //响应式问题 
+      _vue.default.set(state.list[index], 'selected', !state.list[index].selected);
+      console.log('state.list[index].selected', state.list[index].selected);
+    },
+    //全选操作修改list里面selected状态
+    changeStatus: function changeStatus(state, status) {
+      state.list.forEach(function (ele) {
+        _vue.default.set(ele, 'selected', status);
+      });
+    }
+  },
+  actions: {
+    //异步请求 --- 可以把请求在actions触发 
+    getCartData: function getCartData(_ref) {
+      return (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee() {
+        var commit, res;
+        return _regenerator.default.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                commit = _ref.commit;
+                _context.next = 3;
+                return (0, _request.default)(_base.default.cartList);
+              case 3:
+                res = _context.sent;
+                console.log('购物车数据-vuex---', res);
+                if (res.status == 200) {
+                  commit('setList', res.data.result);
+                } else {
+                  commit('setList', []);
+                }
+              case 6:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }))();
+    }
+  }
+};
+exports.default = _default;
+
+/***/ }),
+
 /***/ 4:
 /*!**********************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/interopRequireDefault.js ***!
@@ -11109,7 +11092,7 @@ module.exports = _interopRequireDefault, module.exports.__esModule = true, modul
 
 /***/ }),
 
-/***/ 42:
+/***/ 43:
 /*!************************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/@babel/runtime/regenerator/index.js ***!
   \************************************************************************************************/
@@ -11118,12 +11101,12 @@ module.exports = _interopRequireDefault, module.exports.__esModule = true, modul
 
 // TODO(Babel 8): Remove this file.
 
-var runtime = __webpack_require__(/*! @babel/runtime/helpers/regeneratorRuntime */ 43)();
+var runtime = __webpack_require__(/*! @babel/runtime/helpers/regeneratorRuntime */ 44)();
 module.exports = runtime;
 
 /***/ }),
 
-/***/ 43:
+/***/ 44:
 /*!*******************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/regeneratorRuntime.js ***!
   \*******************************************************************/
@@ -11445,7 +11428,7 @@ module.exports = _regeneratorRuntime, module.exports.__esModule = true, module.e
 
 /***/ }),
 
-/***/ 44:
+/***/ 45:
 /*!*****************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/asyncToGenerator.js ***!
   \*****************************************************************/
@@ -11486,7 +11469,7 @@ module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exp
 
 /***/ }),
 
-/***/ 45:
+/***/ 46:
 /*!********************************************************!*\
   !*** C:/Users/Lemonpeel/Desktop/wy/网易严选/utils/base.js ***!
   \********************************************************/
@@ -11521,14 +11504,18 @@ var base = {
   //购物车数据查询
   getcart: '/cart/list',
   //添加购物车
-  addcart: '/cart/add'
+  addcart: '/cart/add',
+  //删除购物车数据
+  deletecart: '/cart/delete',
+  //修改购物车内容的数量
+  update: '/cart/update'
 };
 var _default = base;
 exports.default = _default;
 
 /***/ }),
 
-/***/ 46:
+/***/ 47:
 /*!***********************************************************!*\
   !*** C:/Users/Lemonpeel/Desktop/wy/网易严选/utils/request.js ***!
   \***********************************************************/
@@ -11543,7 +11530,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = _default;
-var _base = _interopRequireDefault(__webpack_require__(/*! ./base.js */ 45));
+var _base = _interopRequireDefault(__webpack_require__(/*! ./base.js */ 46));
 /* 
 封装网络的请求方法
   url 接口地址

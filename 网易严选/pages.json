@@ -56,17 +56,16 @@
 				"enablePullDownRefresh": false
 			}
 
+		}, {
+			"path": "pages/goodsdetail/goodsdetail",
+			"style":
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
 		}
-	    ,{
-            "path" : "pages/goodsdetail/goodsdetail",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-    ],
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "网易严选",

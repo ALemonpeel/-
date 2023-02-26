@@ -20,5 +20,9 @@ const base = {
 	getcart: '/cart/list',
 	//添加购物车
 	addcart: '/cart/add',
+	//删除购物车数据
+	deletecart: '/cart/delete',
+	//修改购物车内容的数量
+	update: '/cart/update'
 }
 export default base
